@@ -5,6 +5,9 @@ class IniciarVentaFormulario(forms.Form):
     precio = forms.IntegerField()
     fecha_de_oferta = forms.DateField(required=False)
     
+class BuscarArticulo(forms.Form):
+    articulo = forms.CharField(max_length=30, required=False)
+    
 class IniciarCompraFormulario(forms.Form):
     articulo = forms.CharField(max_length=30)
     precio = forms.IntegerField()
